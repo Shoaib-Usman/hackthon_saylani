@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelpHub AI | Community Access</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="HelpHub AI home">
+        <span class="brand-mark">H</span>
+        <span class="brand-name">HelpHub AI</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav">
+        <a href="home.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="leaderboard.html">Leaderboard</a>
+      </nav>
+    </header>
+
+    <main class="hero-grid">
+      <section class="info-panel">
+        <p class="eyebrow light">Community Access</p>
+        <h1>Enter the support network.</h1>
+        <p class="lead">
+          Choose a demo identity, set your role, and jump into a multi-page product flow
+          designed for asking, offering, and tracking help with a premium interface.
+        </p>
+
+        <ul class="feature-list">
+          <li>Role-based entry for Need Help, Can Help, or Both</li>
+          <li>Direct path into dashboard, requests, AI Center, and community feed</li>
+          <li>Persistent demo session powered by LocalStorage</li>
+        </ul>
+      </section>
+
+      <section class="auth-card">
+        <p class="eyebrow dark">Login / Signup</p>
+        <h2>Authenticate your community profile</h2>
+
+        <form class="auth-form" id="authForm">
+          <label class="field">
+            <span>Select demo user</span>
+            <select id="demoUser" name="demoUser">
+              <option value="Ayesha Khan">Ayesha Khan</option>
+              <option value="Ali Raza">Ali Raza</option>
+              <option value="Maham Noor">Maham Noor</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Role selection</span>
+            <select id="role" name="role">
+              <option value="Both">Both</option>
+              <option value="Need Help">Need Help</option>
+              <option value="Can Help">Can Help</option>
+            </select>
+          </label>
+
+          <div class="split-fields">
+            <label class="field">
+              <span>Email</span>
+              <input id="email" name="email" type="email" placeholder="example123@gmail.com" autocomplete="email">
+            </label>
+
+            <label class="field">
+              <span>Password</span>
+              <input id="password" name="password" type="password" placeholder="Enter Your Password" autocomplete="current-password">
+            </label>
+          </div>
+
+          <button class="primary-btn" type="submit">Continue to dashboard</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelpHub AI | Explore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="home.html">
+        <span class="brand-mark">H</span>
+        <span class="brand-name">HelpHub AI</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="home.html">Dashboard</a>
+        <a href="explore.html" class="is-active">Explore</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="notifications.html">Notifications</a>
+      </nav>
+    </header>
+
+    <main class="app-main">
+      <section class="hero-banner">
+        <p class="hero-eyebrow">Explore / Feed</p>
+        <h1>Browse help requests with filterable community context.</h1>
+        <p>Filter by category, urgency, skills, and location to surface the best matches.</p>
+      </section>
+
+      <section class="explore-grid">
+        <aside class="surface-card section-card">
+          <p class="section-eyebrow">Filters</p>
+          <h2 class="section-title">Refine the feed</h2>
+          <form class="stack" style="margin-top: 18px;">
+            <label class="field">
+              <span>Category</span>
+              <select>
+                <option>All categories</option>
+                <option>Web Development</option>
+                <option>Design</option>
+                <option>Career</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Urgency</span>
+              <select>
+                <option>All urgency levels</option>
+                <option>High</option>
+                <option>Medium</option>
+                <option>Low</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Skills</span>
+              <input type="text" value="React, Figma, Git/GitHub">
+            </label>
+            <label class="field">
+              <span>Location</span>
+              <input type="text" value="Karachi, Lahore, Remote">
+            </label>
+          </form>
+        </aside>
+
+        <div class="feed-list">
+          <article class="surface-card request-card">
+            <div class="pill-group">
+              <span class="badge teal">Web Development</span>
+              <span class="badge rose">High</span>
+              <span class="badge green">Solved</span>
+            </div>
+            <h3 class="request-title">Need help</h3>
+            <p class="request-copy">help needed.</p>
+            <div>
+              <strong style="font-size:0.88rem;">Ayesha Khan</strong>
+              <p class="meta-line">Karachi • 1 helper interested</p>
+            </div>
+            <div class="row-between">
+              <span></span>
+              <a href="request-detail.html" style="font-weight:700; font-size:0.84rem;">Open details</a>
+            </div>
+          </article>
+          <article class="surface-card request-card">
+            <div class="pill-group">
+              <span class="badge teal">Web Development</span>
+              <span class="badge rose">High</span>
+              <span class="badge green">Solved</span>
+            </div>
+            <h3 class="request-title">Need help making my portfolio responsive before demo day</h3>
+            <p class="request-copy">My HTML/CSS portfolio breaks on tablets and I need layout guidance before tomorrow evening.</p>
+            <div class="pill-group">
+              <span class="badge teal">HTML/CSS</span>
+              <span class="badge teal">Responsive</span>
+              <span class="badge teal">Portfolio</span>
+            </div>
+            <div>
+              <strong style="font-size:0.88rem;">Sara Noor</strong>
+              <p class="meta-line">Karachi • 1 helper interested</p>
+            </div>
+            <div class="row-between">
+              <span></span>
+              <a href="request-detail.html" style="font-weight:700; font-size:0.84rem;">Open details</a>
+            </div>
+          </article>
+          <article class="surface-card request-card">
+            <div class="pill-group">
+              <span class="badge teal">Design</span>
+              <span class="badge amber">Medium</span>
+              <span class="badge green">Open</span>
+            </div>
+            <h3 class="request-title">Looking for Figma feedback on a volunteer event poster</h3>
+            <p class="request-copy">I have a draft poster for a campus community event and want sharper hierarchy, spacing, and CTA copy.</p>
+            <div class="pill-group">
+              <span class="badge teal">Figma</span>
+              <span class="badge teal">Poster</span>
+              <span class="badge teal">Design Review</span>
+            </div>
+            <div>
+              <strong style="font-size:0.88rem;">Ayesha Khan</strong>
+              <p class="meta-line">Lahore • 1 helper interested</p>
+            </div>
+            <div class="row-between">
+              <span></span>
+              <a href="request-detail.html" style="font-weight:700; font-size:0.84rem;">Open details</a>
+            </div>
+          </article>
+          <article class="surface-card request-card">
+            <div class="pill-group">
+              <span class="badge teal">Career</span>
+              <span class="badge green">Low</span>
+              <span class="badge green">Solved</span>
+            </div>
+            <h3 class="request-title">Need mock interview support for internship applications</h3>
+            <p class="request-copy">Applying to frontend internships and need someone to practice behavioral and technical interview questions with me.</p>
+            <div class="pill-group">
+              <span class="badge teal">Interview Prep</span>
+              <span class="badge teal">Career</span>
+              <span class="badge teal">Frontend</span>
+            </div>
+            <div>
+              <strong style="font-size:0.88rem;">Sara Noor</strong>
+              <p class="meta-line">Remote • 2 helpers interested</p>
+            </div>
+            <div class="row-between">
+              <span></span>
+              <a href="request-detail.html" style="font-weight:700; font-size:0.84rem;">Open details</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

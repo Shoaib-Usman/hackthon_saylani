@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelpHub AI | AI Center</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="home.html">
+        <span class="brand-mark">H</span>
+        <span class="brand-name">HelpHub AI</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="home.html">Dashboard</a>
+        <a href="create-request.html">Create Request</a>
+        <a href="ai-center.html" class="is-active">AI Center</a>
+      </nav>
+    </header>
+
+    <main class="app-main">
+      <section class="hero-banner">
+        <p class="hero-eyebrow">AI Center</p>
+        <h1>See what the platform intelligence is noticing.</h1>
+        <p>AI-like insights summarize demand trends, helper readiness, urgency signals, and request recommendations.</p>
+      </section>
+
+      <section class="metrics-row">
+        <article class="stat-card">
+          <p class="stat-label">Trend pulse</p>
+          <p class="stat-value" style="font-size:1.8rem;">Web Development</p>
+          <p class="stat-note">Most common support area based on active community requests.</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-label">Urgency watch</p>
+          <p class="stat-value">2</p>
+          <p class="stat-note">Requests currently flagged high priority by the urgency detector.</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-label">Mentor pool</p>
+          <p class="stat-value">2</p>
+          <p class="stat-note">Trusted helpers with strong response history and contribution signals.</p>
+        </article>
+      </section>
+
+      <section class="surface-card section-card">
+        <p class="section-eyebrow">AI recommendations</p>
+        <h2 class="section-title">Requests needing attention</h2>
+        <div class="recommendation-list" style="margin-top: 18px;">
+          <article class="recommendation-item">
+            <h3>Need help</h3>
+            <p>AI summary: Web Development request with high urgency. Best suited for members with relevant expertise.</p>
+            <div class="pill-group" style="margin-top: 10px;">
+              <span class="badge teal">Web Development</span>
+              <span class="badge rose">High</span>
+            </div>
+          </article>
+          <article class="recommendation-item">
+            <h3>Need help making my portfolio responsive before demo day</h3>
+            <p>Responsive layout issue with a short deadline. Best helpers are frontend mentors comfortable with CSS grids and media queries.</p>
+            <div class="pill-group" style="margin-top: 10px;">
+              <span class="badge teal">Web Development</span>
+              <span class="badge rose">High</span>
+            </div>
+          </article>
+          <article class="recommendation-item">
+            <h3>Looking for Figma feedback on a volunteer event poster</h3>
+            <p>A visual design critique request where feedback on hierarchy, spacing, and messaging would create the most value.</p>
+            <div class="pill-group" style="margin-top: 10px;">
+              <span class="badge teal">Design</span>
+              <span class="badge amber">Medium</span>
+            </div>
+          </article>
+          <article class="recommendation-item">
+            <h3>Need mock interview support for internship applications</h3>
+            <p>Career coaching request focused on confidence-building, behavioral answers, and entry-level frontend interview prep.</p>
+            <div class="pill-group" style="margin-top: 10px;">
+              <span class="badge teal">Career</span>
+              <span class="badge green">Low</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

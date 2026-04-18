@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelpHub AI | Messages</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="home.html">
+        <span class="brand-mark">H</span>
+        <span class="brand-name">HelpHub AI</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="home.html">Dashboard</a>
+        <a href="explore.html">Explore</a>
+        <a href="messages.html" class="is-active">Messages</a>
+      </nav>
+    </header>
+
+    <main class="app-main">
+      <section class="hero-banner">
+        <p class="hero-eyebrow">Interaction / Messaging</p>
+        <h1>Keep support moving through direct communication.</h1>
+        <p>Basic messaging gives helpers and requesters a clear follow-up path once a match happens.</p>
+      </section>
+
+      <section class="split-layout">
+        <article class="surface-card section-card">
+          <p class="section-eyebrow">Conversation stream</p>
+          <h2 class="section-title">Recent messages</h2>
+          <div class="message-list" style="margin-top: 18px;">
+            <article class="message-item row-between">
+              <div>
+                <h3>Ayesha Khan → Sara Noor</h3>
+                <p>I checked your portfolio request. Share the breakpoint screenshots and I can suggest fixes.</p>
+              </div>
+              <div class="time-pill">09:45<br>AM</div>
+            </article>
+            <article class="message-item row-between">
+              <div>
+                <h3>Hassan Ali → Ayesha Khan</h3>
+                <p>Your event poster concept is solid. I would tighten the CTA and reduce the background texture.</p>
+              </div>
+              <div class="time-pill">11:10<br>AM</div>
+            </article>
+          </div>
+        </article>
+
+        <article class="surface-card section-card">
+          <p class="section-eyebrow">Send message</p>
+          <h2 class="section-title">Start a conversation</h2>
+          <form class="stack" style="margin-top: 18px;" data-demo-form>
+            <label class="field">
+              <span>To</span>
+              <select>
+                <option>Ayesha Khan</option>
+                <option>Sara Noor</option>
+                <option>Hassan Ali</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Message</span>
+              <textarea placeholder="Share support details, ask for files, or suggest next steps."></textarea>
+            </label>
+            <button class="primary-btn" type="submit">Send</button>
+          </form>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
